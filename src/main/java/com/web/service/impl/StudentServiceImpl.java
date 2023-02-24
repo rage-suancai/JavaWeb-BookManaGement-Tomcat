@@ -29,9 +29,9 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public boolean UpdateStudent(Student student) {
+    public List<Student> updateStudent(String name, String sex, String grade) {
 
-        return false;
+        return mapper.updateStudent(name, sex, grade);
 
     }
 

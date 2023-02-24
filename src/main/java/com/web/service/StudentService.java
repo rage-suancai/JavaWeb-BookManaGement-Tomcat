@@ -8,6 +8,6 @@ public interface StudentService {
 
     List<Student> getStudentList();
 
-    boolean UpdateStudent(Student student);
+    List<Student> updateStudent(String name, String sex, String grade);
 
 }

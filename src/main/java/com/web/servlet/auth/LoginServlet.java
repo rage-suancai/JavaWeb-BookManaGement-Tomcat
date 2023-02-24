@@ -23,7 +23,7 @@ import java.io.IOException;
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 
-    UserService service;
+    private static UserService service;
 
     @Override
     public void init() throws ServletException {

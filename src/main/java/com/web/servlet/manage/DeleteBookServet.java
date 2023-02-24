@@ -1,7 +1,5 @@
 package com.web.servlet.manage;
 
-import com.web.service.BookService;
-import com.web.service.impl.BookServiceImpl;
 import com.web.utils.SingletonUtils;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

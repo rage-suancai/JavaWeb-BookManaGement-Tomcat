@@ -1,7 +1,5 @@
 package com.web.servlet.pages;
 
-import com.web.service.StudentService;
-import com.web.service.impl.StudentServiceImpl;
 import com.web.utils.SingletonUtils;
 import com.web.utils.ThymeleafUtil;
 import jakarta.servlet.ServletException;

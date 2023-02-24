@@ -77,19 +77,19 @@
                                                                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                                                     <div class="form-group">
                                                                         <label  for="member-name" class="col-form-label">姓名</label>
-                                                                        <input class="form-control" type="text" placeholder="请输入要修改的姓名..." id="member-name" name="name">
+                                                                        <option class="form-control" th:each="student : ${update_student}" th:type="${student.getSid()}" th:text="${student.getName()}" id="member-name" name="name"></option>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                                                     <div class="form-group">
                                                                         <label for="member-email" class="col-form-label">性别</label>
-                                                                        <input class="form-control" type="text" placeholder="请输入要修改的性别..." id="member-email" name="sex">
+                                                                        <option class="form-control" th:each="student : ${student_list}" th:type="${student.getSid()}" th:text="${student.getSex()}" id="member-email" name="sex"></option>>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                                                     <div class="form-group">
                                                                         <label for="company-name" class="col-form-label">学生学号</label>
-                                                                        <input class="form-control" type="text" placeholder="请填写要修改的学生学号..." id="company-name" name="grade">
+                                                                        <option class="form-control" th:each="student : ${student_list}" th:type="${student.getSid()}" th:text="${student.getGrade()}" id="company-name" name="grade"></option>
                                                                     </div>
                                                                 </div>
                                                             </div>

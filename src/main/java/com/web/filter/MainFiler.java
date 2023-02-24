@@ -31,8 +31,7 @@ public class MainFiler extends HttpFilter {
             User user = (User) session.getAttribute("user");
 
             if(user == null) {
-                res.sendRedirect("login");
-                return;
+                res.sendRedirect("login"); return;
             }
         }
         chain.doFilter(req, res);

@@ -1,8 +1,6 @@
 package com.web.servlet.pages;
 
 import com.web.entity.User;
-import com.web.service.BookService;
-import com.web.service.impl.BookServiceImpl;
 import com.web.utils.SingletonUtils;
 import com.web.utils.ThymeleafUtil;
 import jakarta.servlet.ServletException;

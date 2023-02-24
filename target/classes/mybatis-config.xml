@@ -19,7 +19,6 @@
 
     <mappers>
         <package name="com.web.dao"/>
-        <mapper resource="com.web.dao.BookMapper"/>
     </mappers>
 
 </configuration>

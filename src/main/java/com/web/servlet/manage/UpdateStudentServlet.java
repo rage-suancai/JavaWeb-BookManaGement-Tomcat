@@ -1,5 +1,6 @@
 package com.web.servlet.manage;
 
+import com.web.utils.SingletonUtils;
 import com.web.utils.ThymeleafUtil;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -24,6 +25,15 @@ public class UpdateStudentServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         ThymeleafUtil.process("update-book.html", new Context(), resp.getWriter());
+
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        Context context = new Context();
+        context.setVariable("update_student",
+                SingletonUtils.getStudentServiceSingleton().updateStudent("name", "sex", "grade"));
 
     }
 
